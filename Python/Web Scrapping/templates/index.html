@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Web Portal for Web Scrapping</title>
+  </head>
+  <body>
+    <!-- for single records
+    <h1>{{data['author']}}</h1>
+    <p>{{data['text']}}</p>
+    <p>{{data['tags']}}</p>
+    -->
+
+    <h1>My List of Quotes</h1>
+    
+    
+      {% for item in data %}
+        <h1>{{item.author}}</h1>
+        <p>{{item.text}}</p>
+        <p>{{item.tags}}</p>
+      {% endfor %}
+      
+  </body>
+</html>
